@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree -L 3 /c/Users/micth/Desktop/dev/seo/claud/seoungenerator -I '.git' 2>/dev/null || find /c/Users/micth/Desktop/dev/seo/claud/seoungenerator -not -path '*/.git*' -type f -o -not -path '*/.git*' -type d | sort)",
+      "Bash(node generate-assets.js)",
+      "Bash(node update-pages.js)"
+    ]
+  }
+}
