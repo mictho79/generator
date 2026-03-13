@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Number Generator – Pick Any Number Instantly</title>
+  <meta name="description" content="Generate a random number between any minimum and maximum value. Free, instant, and works right in your browser — no download needed." />
+  <link rel="canonical" href="https://randomgeneratorhub.com/random-number-generator.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Random Number Generator – Pick Any Number Instantly" />
+  <meta property="og:description" content="Free online random number generator. Set your min and max, click generate, and get a truly random integer in seconds." />
+  <meta property="og:url" content="https://randomgeneratorhub.com/random-number-generator.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://randomgeneratorhub.com/og-image.png" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Random Number Generator",
+    "url": "https://randomgeneratorhub.com/random-number-generator.html",
+    "description": "Generate a random integer between any minimum and maximum value, instantly in your browser.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Random<span>Hub</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="random-number-generator.html" class="active">Number</a></li>
+        <li><a href="random-country-generator.html">Country</a></li>
+        <li><a href="random-city-generator.html">City</a></li>
+        <li><a href="random-color-generator.html">Color</a></li>
+        <li><a href="random-name-generator.html">Name</a></li>
+        <li><a href="random-team-generator.html">Team</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-header">
+    <h1>🎲 Random Number Generator</h1>
+    <p class="intro">Set a minimum and maximum value, then click <strong>Generate</strong> to instantly get a random integer within your chosen range. Perfect for games, decisions, statistics, and more.</p>
+  </div>
+
+  <div class="tool-card">
+    <form id="number-form" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="min">Minimum</label>
+          <input type="number" id="min" value="1" placeholder="e.g. 1" />
+        </div>
+        <div class="form-group">
+          <label for="max">Maximum</label>
+          <input type="number" id="max" value="100" placeholder="e.g. 100" />
+        </div>
+      </div>
+      <p id="error-msg" class="error-msg" role="alert"></p>
+      <button type="submit" class="btn btn-primary" id="generate-btn">Generate Number</button>
+    </form>
+
+    <div class="result-box" aria-live="polite">
+      <span class="result-label">Your random number</span>
+      <span class="result-value" id="result-value">—</span>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <section class="faq" aria-label="Frequently asked questions">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How does the random number generator work?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        It uses JavaScript's <code>Math.random()</code> combined with <code>Math.floor()</code> to produce a uniformly distributed integer within your specified range. The formula is: <code>Math.floor(Math.random() × (max − min + 1)) + min</code>.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Can I generate negative numbers?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Yes. Simply enter a negative value in the Min or Max field. For example, setting Min to −50 and Max to 50 will generate numbers in that full range, including zero and negatives.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Is the generated number truly random?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        It is pseudo-random, which is sufficient for the vast majority of everyday uses such as games, decisions, or giveaways. For cryptographic or security-critical applications, a hardware random number generator (HRNG) is recommended.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        What is the maximum range I can use?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        You can use any integers that JavaScript can safely represent — up to ±9,007,199,254,740,991 (Number.MAX_SAFE_INTEGER). For practical use, any everyday range works perfectly.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        What are common uses for a random number generator?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Common uses include picking lottery numbers, running raffles and giveaways, deciding who goes first in a game, sampling data for statistics, generating random IDs, and teaching probability concepts.
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular ranges -->
+  <section class="related" aria-label="Popular number ranges">
+    <h2>Popular Number Ranges</h2>
+    <div class="related-grid">
+      <a href="random-number-generator-1-5.html" class="related-link">🎲 1 to 5</a>
+      <a href="random-number-generator-1-10.html" class="related-link">🎲 1 to 10</a>
+      <a href="random-number-generator-1-20.html" class="related-link">🎲 1 to 20 (D20)</a>
+      <a href="random-number-generator-1-50.html" class="related-link">🎲 1 to 50</a>
+      <a href="random-number-generator-1-100.html" class="related-link">🎲 1 to 100</a>
+      <a href="random-number-generator-1-200.html" class="related-link">🎲 1 to 200</a>
+      <a href="random-number-generator-1-500.html" class="related-link">🎲 1 to 500</a>
+      <a href="random-number-generator-1-1000.html" class="related-link">🎲 1 to 1000</a>
+    </div>
+  </section>
+
+  <!-- Related tools -->
+  <section class="related" aria-label="Related generators">
+    <h2>Explore Other Generators</h2>
+    <div class="related-grid">
+      <a href="random-country-generator.html" class="related-link">🌍 Random Country</a>
+      <a href="random-city-generator.html" class="related-link">🏙️ Random City</a>
+      <a href="random-color-generator.html" class="related-link">🎨 Random Color</a>
+      <a href="random-name-generator.html" class="related-link">👤 Random Name</a>
+      <a href="random-team-generator.html" class="related-link">👥 Random Team</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="random-number-generator.html">Number Generator</a>
+      <a href="random-country-generator.html">Country Generator</a>
+      <a href="random-city-generator.html">City Generator</a>
+      <a href="random-color-generator.html">Color Generator</a>
+      <a href="random-name-generator.html">Name Generator</a>
+      <a href="random-team-generator.html">Team Generator</a>
+    </div>
+    <p class="footer-copy">&copy; 2025 Random Generator Hub. Free to use.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/random-number.js"></script>
+</body>
+</html>

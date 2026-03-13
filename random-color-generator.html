@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Color Generator – Get a Random Hex &amp; RGB Color</title>
+  <meta name="description" content="Generate a random color with its hex code, RGB, and HSL values. Preview the color, copy the hex, and use it instantly in your design projects." />
+  <link rel="canonical" href="https://randomgeneratorhub.com/random-color-generator.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Random Color Generator – Get a Random Hex &amp; RGB Color" />
+  <meta property="og:description" content="Instantly generate random colors with hex, RGB, and HSL values. Free online color picker — no design software needed." />
+  <meta property="og:url" content="https://randomgeneratorhub.com/random-color-generator.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://randomgeneratorhub.com/og-image.png" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Random Color Generator",
+    "url": "https://randomgeneratorhub.com/random-color-generator.html",
+    "description": "Generate random colors with hex, RGB, and HSL values. Preview and copy the color instantly.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Random<span>Hub</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="random-number-generator.html">Number</a></li>
+        <li><a href="random-country-generator.html">Country</a></li>
+        <li><a href="random-city-generator.html">City</a></li>
+        <li><a href="random-color-generator.html" class="active">Color</a></li>
+        <li><a href="random-name-generator.html">Name</a></li>
+        <li><a href="random-team-generator.html">Team</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-header">
+    <h1>🎨 Random Color Generator</h1>
+    <p class="intro">Discover a new color every click. See a live color preview and instantly copy the hex code, RGB value, or HSL format for use in your design, code, or creative work.</p>
+  </div>
+
+  <div class="tool-card">
+    <div id="color-preview" class="color-preview" aria-hidden="true"></div>
+
+    <div class="color-codes" aria-live="polite">
+      <div class="color-code-block">
+        <div class="color-code-label">HEX</div>
+        <div class="color-code-value" id="hex-value">#6366F1</div>
+      </div>
+      <div class="color-code-block">
+        <div class="color-code-label">RGB</div>
+        <div class="color-code-value" id="rgb-value">rgb(99, 102, 241)</div>
+      </div>
+      <div class="color-code-block">
+        <div class="color-code-label">HSL</div>
+        <div class="color-code-value" id="hsl-value">hsl(239, 84%, 67%)</div>
+      </div>
+    </div>
+
+    <div class="btn-group">
+      <button class="btn btn-primary" id="generate-btn">Generate Color</button>
+      <button class="btn btn-secondary" id="copy-btn">Copy Hex</button>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <section class="faq" aria-label="Frequently asked questions">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How does the random color generator work?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        The tool generates three random integers between 0 and 255, one each for the Red, Green, and Blue channels. These are combined to form a hex color code (e.g. <code>#A3F2B1</code>), and then converted to HSL for the third display format.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        What is a hex color code?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        A hex color code is a 6-character string prefixed with <code>#</code> that represents a color in the RGB color model using base-16 (hexadecimal) notation. For example, <code>#FF0000</code> is pure red, <code>#0000FF</code> is pure blue, and <code>#FFFFFF</code> is white.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        What is the difference between RGB and HSL?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        RGB (Red, Green, Blue) defines a color by mixing light intensities of three primary colors, each from 0–255. HSL (Hue, Saturation, Lightness) describes color more intuitively — hue is the type of color (0–360°), saturation is its vividness, and lightness controls how bright or dark it is.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How do I use the generated color in my project?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Click <strong>Copy Hex</strong> to copy the hex code to your clipboard, then paste it directly into CSS, Figma, Photoshop, Canva, or any design tool that accepts hex color input. You can also use the RGB or HSL values if your tool supports those formats.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How many possible colors can be generated?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        There are 256 × 256 × 256 = <strong>16,777,216</strong> possible colors. Each is equally likely, so you could keep clicking for a lifetime and never see every combination.
+      </div>
+    </div>
+  </section>
+
+  <!-- Related tools -->
+  <section class="related" aria-label="Related generators">
+    <h2>Explore Other Generators</h2>
+    <div class="related-grid">
+      <a href="random-number-generator.html" class="related-link">🎲 Random Number</a>
+      <a href="random-country-generator.html" class="related-link">🌍 Random Country</a>
+      <a href="random-city-generator.html" class="related-link">🏙️ Random City</a>
+      <a href="random-name-generator.html" class="related-link">👤 Random Name</a>
+      <a href="random-team-generator.html" class="related-link">👥 Random Team</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="random-number-generator.html">Number Generator</a>
+      <a href="random-country-generator.html">Country Generator</a>
+      <a href="random-city-generator.html">City Generator</a>
+      <a href="random-color-generator.html">Color Generator</a>
+      <a href="random-name-generator.html">Name Generator</a>
+      <a href="random-team-generator.html">Team Generator</a>
+    </div>
+    <p class="footer-copy">&copy; 2025 Random Generator Hub. Free to use.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/random-color.js"></script>
+</body>
+</html>

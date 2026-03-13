@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Name Generator – Pick a Random First Name</title>
+  <meta name="description" content="Generate a random first name from a diverse, multicultural list of 75 names. Perfect for character creation, games, baby name inspiration, and more." />
+  <link rel="canonical" href="https://randomgeneratorhub.com/random-name-generator.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Random Name Generator – Pick a Random First Name" />
+  <meta property="og:description" content="Instantly pick a random first name from 75 diverse names. Free online tool for writers, game designers, and anyone needing a name in a hurry." />
+  <meta property="og:url" content="https://randomgeneratorhub.com/random-name-generator.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://randomgeneratorhub.com/og-image.png" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Random Name Generator",
+    "url": "https://randomgeneratorhub.com/random-name-generator.html",
+    "description": "Pick a random first name from a diverse multicultural list of 75 names — ideal for character creation, games, and creative writing.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Random<span>Hub</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="random-number-generator.html">Number</a></li>
+        <li><a href="random-country-generator.html">Country</a></li>
+        <li><a href="random-city-generator.html">City</a></li>
+        <li><a href="random-color-generator.html">Color</a></li>
+        <li><a href="random-name-generator.html" class="active">Name</a></li>
+        <li><a href="random-team-generator.html">Team</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-header">
+    <h1>👤 Random Name Generator</h1>
+    <p class="intro">Click once to get a random first name drawn from a carefully chosen list of 75 diverse, globally inspired names. Ideal for writers, game designers, educators, and anyone who needs a name on the spot.</p>
+  </div>
+
+  <div class="tool-card">
+    <button class="btn btn-primary" id="generate-btn">Generate Name</button>
+
+    <div class="result-box" aria-live="polite">
+      <span class="result-label">Your random name</span>
+      <span class="result-value" id="result-value">—</span>
+      <span style="font-size:0.8rem;color:var(--muted)" id="result-count"></span>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <section class="faq" aria-label="Frequently asked questions">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        What names are included in the list?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        The list contains 75 first names drawn from a wide range of cultural and linguistic backgrounds — including European (Alice, Felix, Lena), Latin American (Mateo, Sofia, Pablo), East Asian (Yuki, Wei, Aiko), Middle Eastern (Omar, Yasmine, Fatima), and South Asian (Priya) origins, among others.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Can I generate last names or full names?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Currently the tool generates first names only. A full name generator — combining a random first name with a random surname — is planned as a future addition to the hub.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Are the names gender-specific?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        The list is mixed — it includes names traditionally associated with various genders as well as several that are widely used across genders. No gender label is attached to results, leaving interpretation to the user.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        What is a random name generator used for?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Writers use it to name fictional characters quickly. Game designers use it for NPCs. Teachers use it to assign anonymous roles. Parents use it for baby name inspiration. Developers use it to generate realistic placeholder data. Essentially, anywhere a name is needed fast.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Can the same name come up twice in a row?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Yes. Each generation is completely independent, so repeats are possible but statistically rare with 75 names in the pool. If you want unique names in a sequence, consider the <a href="random-team-generator.html">Team Generator</a>, which shuffles names without replacement.
+      </div>
+    </div>
+  </section>
+
+  <!-- Related tools -->
+  <section class="related" aria-label="Related generators">
+    <h2>Explore Other Generators</h2>
+    <div class="related-grid">
+      <a href="random-number-generator.html" class="related-link">🎲 Random Number</a>
+      <a href="random-country-generator.html" class="related-link">🌍 Random Country</a>
+      <a href="random-city-generator.html" class="related-link">🏙️ Random City</a>
+      <a href="random-color-generator.html" class="related-link">🎨 Random Color</a>
+      <a href="random-team-generator.html" class="related-link">👥 Random Team</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="random-number-generator.html">Number Generator</a>
+      <a href="random-country-generator.html">Country Generator</a>
+      <a href="random-city-generator.html">City Generator</a>
+      <a href="random-color-generator.html">Color Generator</a>
+      <a href="random-name-generator.html">Name Generator</a>
+      <a href="random-team-generator.html">Team Generator</a>
+    </div>
+    <p class="footer-copy">&copy; 2025 Random Generator Hub. Free to use.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/random-name.js"></script>
+</body>
+</html>

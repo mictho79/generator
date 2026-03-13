@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random City Generator – Pick a Random City Worldwide</title>
+  <meta name="description" content="Get a random city from around the world with one click. Use it for travel planning, creative writing, geography games, or just for fun." />
+  <link rel="canonical" href="https://randomgeneratorhub.com/random-city-generator.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Random City Generator – Pick a Random City Worldwide" />
+  <meta property="og:description" content="Instantly discover a random city from 60 global destinations. Free online tool, no sign-up, works in any browser." />
+  <meta property="og:url" content="https://randomgeneratorhub.com/random-city-generator.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://randomgeneratorhub.com/og-image.png" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Random City Generator",
+    "url": "https://randomgeneratorhub.com/random-city-generator.html",
+    "description": "Pick a random city from a curated list of 60 global destinations with one click.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Random<span>Hub</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="random-number-generator.html">Number</a></li>
+        <li><a href="random-country-generator.html">Country</a></li>
+        <li><a href="random-city-generator.html" class="active">City</a></li>
+        <li><a href="random-color-generator.html">Color</a></li>
+        <li><a href="random-name-generator.html">Name</a></li>
+        <li><a href="random-team-generator.html">Team</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-header">
+    <h1>🏙️ Random City Generator</h1>
+    <p class="intro">Press the button to instantly pick a random city from our curated collection of 60 iconic destinations around the globe. Great for travel inspiration, geography trivia, writing prompts, and spontaneous adventures.</p>
+  </div>
+
+  <div class="tool-card">
+    <button class="btn btn-primary" id="generate-btn">Generate City</button>
+
+    <div class="result-box" aria-live="polite">
+      <span class="result-label">Your random city</span>
+      <span class="result-value" id="result-value">—</span>
+      <span style="font-size:0.8rem;color:var(--muted)" id="result-count"></span>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <section class="faq" aria-label="Frequently asked questions">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How many cities are in the list?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        The list includes 60 cities spanning every major region of the world — from Amsterdam and Buenos Aires to Tokyo and Zürich. It focuses on globally recognized cities known for culture, tourism, or commerce.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Are these the most populated cities in the world?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Not exclusively. The list balances population size with international recognition and geographic diversity. Cities like Tokyo, Shanghai, and São Paulo are included, but so are smaller yet iconic cities like Prague, Dublin, and Florence.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        What can I use a random city generator for?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Common uses include: planning your next travel destination, setting the scene in fiction writing, hosting geography quiz nights, generating random settings for board games or role-playing games, and breaking decision paralysis when choosing a vacation spot.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Can I get a city from a specific continent?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        The current version generates from the full worldwide list. A continent filter is planned for a future update. For now, keep clicking — with 60 cities across six continents, variety is guaranteed.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Is each city pick equally likely?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Yes. Every city has exactly the same probability of being selected, making the pick fully unbiased each time you click Generate.
+      </div>
+    </div>
+  </section>
+
+  <!-- Related tools -->
+  <section class="related" aria-label="Related generators">
+    <h2>Explore Other Generators</h2>
+    <div class="related-grid">
+      <a href="random-number-generator.html" class="related-link">🎲 Random Number</a>
+      <a href="random-country-generator.html" class="related-link">🌍 Random Country</a>
+      <a href="random-color-generator.html" class="related-link">🎨 Random Color</a>
+      <a href="random-name-generator.html" class="related-link">👤 Random Name</a>
+      <a href="random-team-generator.html" class="related-link">👥 Random Team</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="random-number-generator.html">Number Generator</a>
+      <a href="random-country-generator.html">Country Generator</a>
+      <a href="random-city-generator.html">City Generator</a>
+      <a href="random-color-generator.html">Color Generator</a>
+      <a href="random-name-generator.html">Name Generator</a>
+      <a href="random-team-generator.html">Team Generator</a>
+    </div>
+    <p class="footer-copy">&copy; 2025 Random Generator Hub. Free to use.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/random-city.js"></script>
+</body>
+</html>

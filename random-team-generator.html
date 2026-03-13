@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Team Generator – Split a Group into Teams Instantly</title>
+  <meta name="description" content="Paste a list of names and split them into random, balanced teams in one click. Free online team randomizer for sports, classrooms, and events." />
+  <link rel="canonical" href="https://randomgeneratorhub.com/random-team-generator.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Random Team Generator – Split a Group into Teams Instantly" />
+  <meta property="og:description" content="Enter names, choose how many teams, and get randomly shuffled teams in seconds. Free, private, no account needed." />
+  <meta property="og:url" content="https://randomgeneratorhub.com/random-team-generator.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://randomgeneratorhub.com/og-image.png" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Random Team Generator",
+    "url": "https://randomgeneratorhub.com/random-team-generator.html",
+    "description": "Enter a list of names and split them into any number of random, balanced teams instantly.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Random<span>Hub</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="random-number-generator.html">Number</a></li>
+        <li><a href="random-country-generator.html">Country</a></li>
+        <li><a href="random-city-generator.html">City</a></li>
+        <li><a href="random-color-generator.html">Color</a></li>
+        <li><a href="random-name-generator.html">Name</a></li>
+        <li><a href="random-team-generator.html" class="active">Team</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-header">
+    <h1>👥 Random Team Generator</h1>
+    <p class="intro">Enter the names of your participants — one per line — choose how many teams you need, and click <strong>Generate Teams</strong>. The tool shuffles names fairly and distributes them as evenly as possible across all teams.</p>
+  </div>
+
+  <div class="tool-card">
+    <div class="form-group">
+      <label for="names-input">Names (one per line)</label>
+      <textarea id="names-input" placeholder="Alice&#10;Bob&#10;Charlie&#10;Diana&#10;Ethan&#10;Fiona"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="team-count">Number of Teams</label>
+      <input type="number" id="team-count" value="2" min="2" max="50" style="max-width:160px;" />
+    </div>
+    <p id="error-msg" class="error-msg" role="alert"></p>
+    <button class="btn btn-primary" id="generate-btn">Generate Teams</button>
+
+    <div id="teams-result" aria-live="polite"></div>
+  </div>
+
+  <!-- FAQ -->
+  <section class="faq" aria-label="Frequently asked questions">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How does the team generator work?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        The tool shuffles your list of names using the Fisher-Yates algorithm — one of the most reliable shuffling methods — and then distributes names into teams round-robin style to ensure maximum balance.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Will teams always be perfectly equal in size?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Teams will be as equal as mathematically possible. If the number of participants does not divide evenly by the number of teams, some teams will have one extra member. For example, 10 names split into 3 teams gives two teams of 3 and one team of 4.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Is there a limit on how many names I can enter?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        There is no hard limit enforced by the tool. In practice, the browser handles hundreds of names without any issue. Simply paste your full list, one name per line, and click generate.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Are the names saved or sent anywhere?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        No. Everything runs entirely in your browser. No data is sent to any server, and names are not stored or logged anywhere. Your participant list stays completely private.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        What are common uses for a random team generator?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Popular scenarios include dividing a class into study or project groups, splitting players for sports days and PE lessons, organizing hackathon teams, assigning teams for trivia nights, or creating fair sides for any group activity where random assignment matters.
+      </div>
+    </div>
+  </section>
+
+  <!-- Related tools -->
+  <section class="related" aria-label="Related generators">
+    <h2>Explore Other Generators</h2>
+    <div class="related-grid">
+      <a href="random-number-generator.html" class="related-link">🎲 Random Number</a>
+      <a href="random-country-generator.html" class="related-link">🌍 Random Country</a>
+      <a href="random-city-generator.html" class="related-link">🏙️ Random City</a>
+      <a href="random-color-generator.html" class="related-link">🎨 Random Color</a>
+      <a href="random-name-generator.html" class="related-link">👤 Random Name</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="random-number-generator.html">Number Generator</a>
+      <a href="random-country-generator.html">Country Generator</a>
+      <a href="random-city-generator.html">City Generator</a>
+      <a href="random-color-generator.html">Color Generator</a>
+      <a href="random-name-generator.html">Name Generator</a>
+      <a href="random-team-generator.html">Team Generator</a>
+    </div>
+    <p class="footer-copy">&copy; 2025 Random Generator Hub. Free to use.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/random-team.js"></script>
+</body>
+</html>

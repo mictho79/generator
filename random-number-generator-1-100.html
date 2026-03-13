@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Number Generator 1-100 – Pick a Number from 1 to 100</title>
+  <meta name="description" content="Generate a random number between 1 and 100 instantly. The most popular random number range — perfect for guessing games, percentages, raffles, and classroom activities." />
+  <link rel="canonical" href="https://randomgeneratorhub.com/random-number-generator-1-100.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Random Number Generator 1-100 – Pick a Number from 1 to 100" />
+  <meta property="og:description" content="Free online tool to instantly pick a random number from 1 to 100. The most-used range for games, giveaways, and statistical sampling." />
+  <meta property="og:url" content="https://randomgeneratorhub.com/random-number-generator-1-100.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://randomgeneratorhub.com/og-image.png" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Random Number Generator 1 to 100",
+    "url": "https://randomgeneratorhub.com/random-number-generator-1-100.html",
+    "description": "Generate a random number between 1 and 100 instantly. The most popular range for games, giveaways, percentages, and educational use.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+  }
+  </script>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="index.html" class="logo">Random<span>Hub</span></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="random-number-generator.html" class="active">Number</a></li>
+        <li><a href="random-country-generator.html">Country</a></li>
+        <li><a href="random-city-generator.html">City</a></li>
+        <li><a href="random-color-generator.html">Color</a></li>
+        <li><a href="random-name-generator.html">Name</a></li>
+        <li><a href="random-team-generator.html">Team</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="page-header">
+    <h1>🎲 Random Number Generator 1–100</h1>
+    <p class="intro">The 1–100 range is the world's most popular choice for random number generation. It's intuitive, percentage-like, and universally understood. Click <strong>Generate</strong> for an instant, fair pick anywhere from 1 to 100.</p>
+  </div>
+
+  <div class="tool-card">
+    <form id="number-form" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="min">Minimum</label>
+          <input type="number" id="min" value="1" readonly />
+        </div>
+        <div class="form-group">
+          <label for="max">Maximum</label>
+          <input type="number" id="max" value="100" readonly />
+        </div>
+      </div>
+      <p id="error-msg" class="error-msg" role="alert"></p>
+      <button type="submit" class="btn btn-primary" id="generate-btn">Generate Number (1–100)</button>
+    </form>
+
+    <div class="result-box" aria-live="polite">
+      <span class="result-label">Your random number (1–100)</span>
+      <span class="result-value" id="result-value">—</span>
+    </div>
+  </div>
+
+  <p style="margin-bottom:2rem;">Need a different range? Try the <a href="random-number-generator.html">custom Random Number Generator</a> to set any min and max value.</p>
+
+  <section class="faq" aria-label="Frequently asked questions">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Why is 1–100 the most popular random number range?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        The 1–100 range maps naturally onto the concept of percentages, making results easy to interpret at a glance. It's large enough to provide meaningful variety, small enough to feel bounded, and familiar to people of all ages and backgrounds.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        What is the probability of getting a specific number like 42?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        The probability of any specific number is 1/100 = 1%. Each of the 100 possible outcomes is equally likely on every single click. Previous results have no effect on future ones.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Can I use this for a "think of a number" guessing game?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Absolutely. Generate a secret number, note it privately, and let others guess. You can tell them whether the target is higher or lower after each guess (binary search guessing game). The 1–100 range typically takes no more than 7 guesses to solve with optimal strategy.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        Is this good for a raffle or giveaway with 100 entries?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        Yes. Assign each entry a number from 1–100, generate a result, and the matching entry wins. For complete transparency, you could share a link to this page with your audience and generate the result live in front of them.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">
+        How is this used in statistics or data sampling?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-answer">
+        In simple random sampling, you can number items 1–100 and use this generator to select which items to sample. It ensures every item has an equal chance of selection, a fundamental requirement of unbiased statistical sampling.
+      </div>
+    </div>
+  </section>
+
+  <section class="related" aria-label="Other number ranges">
+    <h2>Other Number Ranges</h2>
+    <div class="related-grid">
+      <a href="random-number-generator-1-5.html" class="related-link">🎲 1 to 5</a>
+      <a href="random-number-generator-1-10.html" class="related-link">🎲 1 to 10</a>
+      <a href="random-number-generator-1-20.html" class="related-link">🎲 1 to 20</a>
+      <a href="random-number-generator-1-50.html" class="related-link">🎲 1 to 50</a>
+      <a href="random-number-generator-1-200.html" class="related-link">🎲 1 to 200</a>
+      <a href="random-number-generator-1-500.html" class="related-link">🎲 1 to 500</a>
+      <a href="random-number-generator-1-1000.html" class="related-link">🎲 1 to 1000</a>
+      <a href="random-number-generator.html" class="related-link">⚙️ Custom Range</a>
+    </div>
+  </section>
+
+  <section class="related" aria-label="More random generators">
+    <h2>More Random Generators</h2>
+    <div class="related-grid">
+      <a href="random-country-generator.html" class="related-link">🌍 Random Country</a>
+      <a href="random-city-generator.html" class="related-link">🏙️ Random City</a>
+      <a href="random-color-generator.html" class="related-link">🎨 Random Color</a>
+      <a href="random-name-generator.html" class="related-link">👤 Random Name</a>
+      <a href="random-team-generator.html" class="related-link">👥 Random Team</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="random-number-generator.html">Number Generator</a>
+      <a href="random-country-generator.html">Country Generator</a>
+      <a href="random-city-generator.html">City Generator</a>
+      <a href="random-color-generator.html">Color Generator</a>
+      <a href="random-name-generator.html">Name Generator</a>
+      <a href="random-team-generator.html">Team Generator</a>
+    </div>
+    <p class="footer-copy">&copy; 2025 Random Generator Hub. Free to use.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/random-number.js"></script>
+</body>
+</html>
