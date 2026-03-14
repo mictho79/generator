@@ -4,35 +4,54 @@
   <meta charset="UTF-8" />
   <meta name="google-site-verification" content="lBEIuS-fSyE4xe_CNG8TaV0_-NneRXKzxq7G8EycSwI" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Random Generator Hub – Free Online Random Generators</title>
   <meta name="description" content="Random Generator Hub offers free, fast online random generators — numbers, countries, cities, colors, names, and team splitters. No sign-up required." />
+  <meta name="application-name" content="Random Generator Hub" />
+  <meta name="author" content="Random Generator Hub" />
+  <meta name="robots" content="index, follow" />
+
   <link rel="canonical" href="https://randomhub-5ee.pages.dev/" />
 
-  <!-- Open Graph -->
   <meta property="og:title" content="Random Generator Hub – Free Online Random Generators" />
   <meta property="og:description" content="Free, fast random generators for numbers, countries, cities, colors, names, and teams. Clean tools with no ads, no sign-up." />
   <meta property="og:url" content="https://randomhub-5ee.pages.dev/" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://randomhub-5ee.pages.dev/assets/logo.svg" />
+  <meta property="og:site_name" content="Random Generator Hub" />
 
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
   <link rel="shortcut icon" href="assets/favicon.ico">
   <link rel="stylesheet" href="css/style.css" />
 
-  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Random Generator Hub",
-    "url": "https://randomhub-5ee.pages.dev/",
-    "description": "Free online random generators for numbers, countries, cities, colors, names, and teams.",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://randomhub-5ee.pages.dev/?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://randomhub-5ee.pages.dev/#website",
+        "url": "https://randomhub-5ee.pages.dev/",
+        "name": "Random Generator Hub",
+        "alternateName": "RandomHub",
+        "description": "Free online random generators for numbers, countries, cities, colors, names, and teams.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://randomhub-5ee.pages.dev/?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://randomhub-5ee.pages.dev/#organization",
+        "name": "Random Generator Hub",
+        "url": "https://randomhub-5ee.pages.dev/"
+      }
+    ]
   }
   </script>
 </head>
