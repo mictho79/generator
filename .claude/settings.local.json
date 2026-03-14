@@ -3,7 +3,8 @@
     "allow": [
       "Bash(tree -L 3 /c/Users/micth/Desktop/dev/seo/claud/seoungenerator -I '.git' 2>/dev/null || find /c/Users/micth/Desktop/dev/seo/claud/seoungenerator -not -path '*/.git*' -type f -o -not -path '*/.git*' -type d | sort)",
       "Bash(node generate-assets.js)",
-      "Bash(node update-pages.js)"
+      "Bash(node update-pages.js)",
+      "Bash(cd \"C:\\\\Users\\\\micth\\\\Desktop\\\\dev\\\\seo\\\\claud\\\\seoungenerator\" && sed -i 's|https://randomgeneratorhub\\\\.com|https://randomhub-5ee.pages.dev|g' random-city-generator.html random-color-generator.html random-country-generator.html random-name-generator.html random-number-generator-1-10.html random-number-generator-1-100.html random-number-generator-1-1000.html random-number-generator-1-20.html random-number-generator-1-200.html random-number-generator-1-5.html random-number-generator-1-50.html random-number-generator-1-500.html random-number-generator.html random-team-generator.html)"
     ]
   }
 }
